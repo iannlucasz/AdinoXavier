@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: Freshman;
+    src: url(fontes/Freshman.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    src: url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined) format('woff');
+  }
+
+:root {
+    --cor0:#BF214B;
+    --cor1:#0A37BF;
+    --cor2:#F2D43D;
+    --cor3:#F2921D;
+    --cor4:#F2F2F2;
+
+    --fonte1:"Kanit", sans-serif;
+    --fonte2:"Inter", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(185, 177, 177);
+}
+
+header {
+    background: linear-gradient(90deg, var(--cor0), var(--cor3), var(--cor2));
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+header >  h1 {
+    color: var(--cor4);
+    margin-top: 8px;
+    font-family: var(--fonte1);
+    text-shadow: 5px 5px 5px black;
+    font-size: 30pt;
+
+}
+
+header > p {
+    color: var(--cor4);
+    font-size: 15pt;
+    margin-top: -20px;
+    text-shadow: 5px 5px 5px black;
+    font-family: var(--fonte1);
+    font-style: normal;
+}
+
+nav {
+    background: var(--cor1);
+    text-align: center;
+    padding-bottom: 5px;
+  
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+  nav ul li {
+    text-align: center;
+    font-family: var(--fonte2);
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    
+}
+
+/* Estilos dos links do menu */
+.menu li {
+    border-bottom: 1px solid #000000d0; /* Linha de separação entre os itens */
+}
+
+.menu li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+.menu li a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+   
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+/* Ajustes de hover */
+.menu li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    padding-left: 25px; /* Ajusta o padding ao passar o mouse */
+    color: white;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mostrar menu quando ativado */
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+/* Layout para dispositivos maiores */
+@media (min-width: 600px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        border-bottom: none; /* Remove as linhas no layout desktop */
+    }
+
+    .menu li a {
+        color: white;
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.3s, padding-left 0.3s;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+  
+div#conteudo {
+    background:var(--cor4);
+    padding-bottom: 20px;
+    box-sizing: content-box ;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.707);
+    
+    
+}
+
+div#conteudo > h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: x-large;
+    font-family: var(--fonte1) ;
+}
+
+div#conteudo > p {
+    text-align: justify;
+    margin: auto;
+    text-align: center;
+    font-size: 14pt;
+    font-family: var(--fonte2);
+    padding-left:20px ;
+    padding-right: 20px;
+
+}
+
+div#conteudo > p#p1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+footer {
+    background: var(--cor1);
+    color: var(--cor4);
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+
