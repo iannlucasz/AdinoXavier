@@ -206,12 +206,12 @@ img#fachada {
     height: auto;
 }
 
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
     img#fachada {
-        max-width: 90%; /* Por exemplo, 90% da tela para dar alguma margem 
+        max-width: 90%; /* Por exemplo, 90% da tela para dar alguma margem */
     }
 }
-*/
+
 
 
 iframe#mapa {
