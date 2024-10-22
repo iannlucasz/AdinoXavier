@@ -6,6 +6,22 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="mediaquery.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        div#conteudo > h2 {
+            color: #c31946;
+            text-align: left;
+            margin-left: 5px;
+            padding-bottom: 20px;
+            text-shadow:  1px 1px 5px #c7730ceb;
+            
+        }
+
+        img.foto01 {
+            padding-bottom: 10px;
+        }
+
+        
+    </style>
     <title>ÁREAS | CEDAX</title>
 </head>
 <body>
@@ -14,6 +30,7 @@
         <p>Colégio Estadual Doutor Adino Xavier</p>
     </header>
     <nav>
+       
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="menu">
@@ -27,12 +44,25 @@
     <main>
         <aside>
             <section>
-                <div id="conteudo"></div>
+                <div id="conteudo">
+                   <h2>Quadra Poliesportiva</h2>
+                   <picture>
+                        <img id="areas" class="foto01" src="images/quadra01.jpg" alt="Foto Quadra01">
+                   </picture> <br>
+                   <picture>
+                        <img id="areas" class="foto02"  src="images/quadra02.jpg" alt="Foto da Quadra02">
+                   </picture>
+                   <h2>Pátio</h2>
+                   <picture>
+                        <img id="areas" src="images/pátio.jpg" alt="Foto do Pátio">
+                   </picture>
+                   
+                </div>
             </section>
         </aside>
     </main>
     <footer>
-        
+        © 2024 Colégio Estadual Doutor Adino Xavier. Todos os direitos reservados.
     </footer>
 </body>
 </html>

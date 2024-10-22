@@ -159,8 +159,9 @@ nav ul {
         margin-left: 2px;
         margin-right: 5px;
     }
+
 }
-  
+
 div#conteudo {
     background:var(--cor4);
     padding-bottom: 20px;
@@ -178,6 +179,8 @@ div#conteudo > h2 {
     font-size: x-large;
     font-family: var(--fonte1) ;
 }
+
+
 
 div#conteudo > p {
     text-align: justify;
@@ -201,22 +204,28 @@ div#conteudo > p#p2 {
 }
 
 
-img#fachada {
-    max-width: 100%;
-    height: auto;
+img#areas  {
+    display: inline-block; /* Garante que a imagem seja tratada como um bloco para centralização */
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
+
 @media (max-width: 480px) {
-    img#fachada {
+    img#areas {
         max-width: 90%; /* Por exemplo, 90% da tela para dar alguma margem */
+        
     }
 }
 
 
 
-iframe#mapa {
-    padding-top: 20px;
-    padding-left: 50px;
+.iframe-container iframe {
+    display: block; /* Para garantir que o margin: auto funcione */
+    margin: 0 auto; /* Centraliza o iframe horizontalmente */
+    width: 100%; /* Ajusta a largura para que seja responsivo */
+    max-width: 480px; /* Defina um valor máximo de largura */
+    height: 250px; /* Defina a altura apropriada */
 }
 
 footer {
