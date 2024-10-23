@@ -131,37 +131,6 @@ nav ul {
     display: block;
 }
 
-/* Layout para dispositivos maiores */
-@media (min-width: 600px) {
-    .menu {
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .menu li {
-        border-bottom: none; /* Remove as linhas no layout desktop */
-    }
-
-    .menu li a {
-        color: white;
-        padding: 15px;
-        display: block;
-        text-decoration: none;
-        transition: background-color 0.3s, padding-left 0.3s;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin-left: 2px;
-        margin-right: 5px;
-    }
-
-}
 
 div#conteudo {
     background:var(--cor4);
@@ -196,7 +165,7 @@ div#conteudo > p {
 
 div#conteudo > p#p1 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -217,16 +186,6 @@ img#areas  {
      
     margin: 0 auto; 
   }
-  
-
-
-@media (max-width: 480px) {
-    img#areas {
-        max-width: 90%; /* Por exemplo, 90% da tela para dar alguma margem */
-        
-    }
-}
-
 
 
 .iframe-container iframe {
@@ -252,9 +211,59 @@ footer {
  }
 
 a {
-    text-decoration: none;
- }
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+
+
+
+ /*MediaQuery no Geral */
+
+
+
+
+
+
+ /* Layout para dispositivos maiores */
+@media (min-width: 600px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .menu li {
+        border-bottom: none; /* Remove as linhas no layout desktop */
+    }
+
+    .menu li a {
+        color: white;
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.3s, padding-left 0.3s;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+
+}
+
+/* MediaQuery para o img */
+
+@media (max-width: 480px) {
+    img#areas {
+        max-width: 90%; /* Por exemplo, 90% da tela para dar alguma margem */
+        
+    }
+}
 
 
 
