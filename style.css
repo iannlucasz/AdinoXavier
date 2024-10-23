@@ -205,10 +205,18 @@ div#conteudo > p#p2 {
 
 
 img#areas  {
-    display: inline-block; /* Garante que a imagem seja tratada como um bloco para centralização */
-    max-width: 100%; /* Garante que a imagem seja responsiva */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
+
+.container {
+    ; /* ou um valor fixo, como 300px */
+    margin: 0 auto; /* centraliza a div */
+  }
+  
 
 
 @media (max-width: 480px) {
