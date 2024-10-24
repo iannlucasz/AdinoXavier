@@ -108,7 +108,7 @@ nav ul {
 
 /* Ajustes de hover */
 .menu li a:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
+    background-color: #170fad; /* Cor de fundo ao passar o mouse */
     padding-left: 25px; /* Ajusta o padding ao passar o mouse */
     color: white;
 }
